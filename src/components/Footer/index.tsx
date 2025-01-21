@@ -12,7 +12,6 @@ const Footer = () => {
 						© {currentYear} Pakorn Phongkhunakorn. All rights reserved.
 					</div>
 
-					{/* Social Links */}
 					<div className="flex items-center space-x-4">
 						{SOCIAL_LINKS.map((link) => {
 							const Icon = link.icon;
