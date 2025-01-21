@@ -14,6 +14,8 @@ const Navigation = () => {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 	const { scrollY } = useScroll();
 
+	console.log(theme);
+
 	useMotionValueEvent(scrollY, "change", (latest) => {
 		const previous = scrollY.getPrevious();
 		if (!previous) return;
