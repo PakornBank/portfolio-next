@@ -26,7 +26,6 @@ const AboutSection = () => {
 							delay={0.2}
 							className="relative h-[calc(100%-3rem)]"
 						>
-							{/* <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl blur-3xl" /> */}
 							<Card className="relative h-full p-6 backdrop-blur-sm border border-primary/10 bg-background/50">
 								<CardContent className="p-0 h-full flex items-center">
 									<p className="text-lg leading-relaxed">
