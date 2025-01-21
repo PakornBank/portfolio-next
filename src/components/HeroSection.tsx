@@ -39,7 +39,7 @@ const HeroSection = () => {
 			>
 				<div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl blur-3xl" />
 				<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-					<div className="text-center lg:text-left space-y-6">
+					<div className="text-center lg:text-left space-y-6 z-0">
 						<motion.div
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
@@ -117,7 +117,6 @@ const HeroSection = () => {
 								sizes="(max-width: 768px) 100vw, 50vw"
 								priority
 							/>
-							{/* <div className="absolute inset-0 bg-gradient-to-t from-AnimatedBackground from-0% via-background/50 via-15% to-transparent to-30%" /> */}
 						</div>
 					</motion.div>
 				</div>
