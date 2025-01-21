@@ -1,4 +1,4 @@
-import { ProjectCardProps } from "./type";
+import { ProjectCardProps } from "./types";
 import { Code2, Server, TestTube2 } from "lucide-react";
 
 export const PROJECT_DATA: ProjectCardProps = {

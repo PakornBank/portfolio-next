@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Globe, ArrowUpRight } from "lucide-react";
-import { ProjectCardProps } from "./type";
+import { ProjectCardProps } from "./types";
 import Image from "next/image";
 import ScrollAnimation from "../ScrollAnimation";
 
