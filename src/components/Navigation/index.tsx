@@ -10,11 +10,9 @@ import { NAV_ITEMS } from "./constant";
 
 const Navigation = () => {
 	const [hidden, setHidden] = useState(false);
-	const { setTheme, theme } = useTheme();
+	const { setTheme, theme, systemTheme } = useTheme();
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 	const { scrollY } = useScroll();
-
-	console.log(theme);
 
 	useMotionValueEvent(scrollY, "change", (latest) => {
 		const previous = scrollY.getPrevious();
@@ -38,6 +36,8 @@ const Navigation = () => {
 		}
 		setIsMobileMenuOpen(false);
 	};
+
+	const resolvedTheme = theme === "system" ? systemTheme : theme;
 
 	return (
 		<nav
@@ -66,11 +66,13 @@ const Navigation = () => {
 						<Button
 							variant="ghost"
 							size="icon"
-							onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+							onClick={() =>
+								setTheme(resolvedTheme === "dark" ? "light" : "dark")
+							}
 							className="hover:text-primary"
 						>
 							<span className="sr-only">Toggle theme</span>
-							{theme === "dark" ? (
+							{resolvedTheme === "dark" ? (
 								<Sun className="h-5 w-5" />
 							) : (
 								<Moon className="h-5 w-5" />
@@ -108,11 +110,11 @@ const Navigation = () => {
 										variant="ghost"
 										className="w-full justify-start"
 										onClick={() => {
-											setTheme(theme === "dark" ? "light" : "dark");
+											setTheme(resolvedTheme === "dark" ? "light" : "dark");
 											setIsMobileMenuOpen(false);
 										}}
 									>
-										{theme === "dark" ? (
+										{resolvedTheme === "dark" ? (
 											<>
 												<Sun className="mr-2 h-4 w-4" />
 												Light Mode
