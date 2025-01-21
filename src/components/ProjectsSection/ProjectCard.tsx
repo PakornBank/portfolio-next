@@ -20,8 +20,8 @@ const ProjectCard = ({
 	iconPath,
 }: ProjectCardProps) => {
 	return (
-		<ScrollAnimation delay={0.1}>
-			<Card className="w-full max-w-4xl overflow-hidden">
+		<ScrollAnimation delay={0.1} className="relative">
+			<Card className="w-full overflow-hidden bg-gradient-to-r from-secondary/20 to-secondary/5">
 				<ScrollAnimation>
 					<CardHeader>
 						<div className="flex items-center justify-between">

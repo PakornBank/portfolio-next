@@ -1,21 +1,26 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Calendar, Building2, CheckCircle2 } from "lucide-react";
+import { Calendar, Building2, CheckCircle2, Briefcase } from "lucide-react";
 import { EXPERIENCE } from "./constant";
 import ScrollAnimation from "../ScrollAnimation";
 
 const ExperienceSection = () => {
 	return (
-		<div id="experience" className="w-full max-w-4xl mx-auto p-6 relative">
+		<div id="experience" className="w-full max-w-4xl mx-auto p-4 relative">
 			<div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl blur-3xl" />
 
 			<ScrollAnimation>
-				<h2 className="text-3xl font-bold mb-8 text-center">Experience</h2>
+				<div className="flex items-center justify-start gap-3 mb-6 w-full">
+					<div className="bg-primary/10 p-3 rounded-xl">
+						<Briefcase className="w-6 h-6 text-primary" />
+					</div>
+					<h2 className="text-3xl font-bold">Experience</h2>
+				</div>
 			</ScrollAnimation>
 
 			<ScrollAnimation delay={0.1}>
-				<Card className="relative overflow-hidden border border-gray-200 dark:border-gray-800">
+				<Card className="relative overflow-hidden border border-gray-200 dark:border-gray-800 bg-gradient-to-r from-secondary/40 to-secondary/10">
 					<div className="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-blue-500 to-purple-500" />
 
 					<CardContent className="p-6">

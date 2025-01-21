@@ -6,7 +6,7 @@ import ProjectsSection from "@/components/ProjectsSection";
 
 export default function Home() {
 	return (
-		<div className="min-h-screen bg-background text-foreground">
+		<div className="min-h-screen bg-background text-foreground -z-50">
 			<HeroSection />
 			<AboutSection />
 			<ExperienceSection />

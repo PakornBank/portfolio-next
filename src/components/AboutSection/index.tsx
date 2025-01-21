@@ -26,7 +26,8 @@ const AboutSection = () => {
 							delay={0.2}
 							className="relative h-[calc(100%-3rem)]"
 						>
-							<Card className="relative h-full p-6 backdrop-blur-sm border border-primary/10 bg-background/50">
+							<div className="absolute inset-0 bg-gradient-to-r from-secondary/10 to-primary/10 rounded-2xl blur-3xl" />
+							<Card className="relative h-full p-6 backdrop-blur-sm border border-primary/10 bg-gradient-to-r from-secondary/15 to-secondary/25 z-10">
 								<CardContent className="p-0 h-full flex items-center">
 									<p className="text-lg leading-relaxed">
 										Interested in full-stack software development, I am
@@ -55,7 +56,7 @@ const AboutSection = () => {
 							className="relative h-[calc(100%-3rem)]"
 						>
 							<div className="absolute inset-0 bg-gradient-to-r from-secondary/10 to-primary/10 rounded-2xl blur-3xl" />
-							<Card className="relative h-full p-6 backdrop-blur-sm border border-primary/10 bg-background/50">
+							<Card className="relative h-full p-6 backdrop-blur-sm border border-primary/10 bg-gradient-to-r from-secondary/15 to-secondary/25 z-10">
 								<CardContent className="p-0 h-full flex flex-col justify-center">
 									<div className="space-y-4">
 										<div className="flex flex-col gap-4">
