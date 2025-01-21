@@ -1,0 +1,27 @@
+export const EXPERIENCE = {
+	company: "Lineman Wongnai",
+	role: "Frontend Engineer Intern",
+	period: "May - July 2024",
+	duration: "2 months",
+	responsibilities: [
+		"Worked in the AdTech team, focusing on advertisement services (data collection, ad display, ad purchasing, and ad manager UI for user)",
+		"Followed Agile methodologies to boost productivity",
+		"Developed, enhanced, and debugged UI in webviews using React/React Native and Styled Components",
+		"Delivered a new UI for the upcoming advertisement credit system",
+		"Built and maintained internal libraries for UI components and tracking user interactions (clicks, views, navigation)",
+		"Test-driven development (TDD) by writing unit tests using Jest and Vitest",
+		"Wrote automated E2E tests (Playwright, Cypress) in a CI/CD pipeline",
+		"Adhered to strict coding standards, improving code quality",
+		"Learned to communicate and cooperate with backend, QA, and UX teams",
+	],
+	skills: [
+		"React",
+		"React Native",
+		"TDD",
+		"Jest",
+		"Vitest",
+		"Playwright",
+		"Cypress",
+		"CI/CD",
+	],
+};
