@@ -23,19 +23,21 @@ const AboutSection = () => {
 							<h2 className="text-3xl font-bold tracking-tight">Objective</h2>
 						</ScrollAnimation>
 						<ScrollAnimation
-							delay={0.2}
+							delay={0.1}
 							className="relative h-[calc(100%-3rem)]"
 						>
 							<div className="absolute inset-0 bg-gradient-to-r from-secondary/10 to-primary/10 rounded-2xl blur-3xl" />
 							<Card className="relative h-full p-6 backdrop-blur-sm border border-primary/10 bg-gradient-to-r from-secondary/15 to-secondary/25 z-10">
 								<CardContent className="p-0 h-full flex items-center">
-									<p className="text-lg leading-relaxed">
-										Interested in full-stack software development, I am
-										proficient in various technologies in this field. My goal is
-										to improve my performance by enhancing my skills and
-										experience, while also exploring other domains to take on
-										different roles and meet task requirements.
-									</p>
+									<ScrollAnimation delay={0.2}>
+										<p className="text-lg leading-relaxed">
+											Interested in full-stack software development, I am
+											proficient in various technologies in this field. My goal
+											is to improve my performance by enhancing my skills and
+											experience, while also exploring other domains to take on
+											different roles and meet task requirements.
+										</p>
+									</ScrollAnimation>
 								</CardContent>
 							</Card>
 						</ScrollAnimation>
@@ -52,7 +54,7 @@ const AboutSection = () => {
 							<h2 className="text-3xl font-bold tracking-tight">Education</h2>
 						</ScrollAnimation>
 						<ScrollAnimation
-							delay={0.3}
+							delay={0.2}
 							className="relative h-[calc(100%-3rem)]"
 						>
 							<div className="absolute inset-0 bg-gradient-to-r from-secondary/10 to-primary/10 rounded-2xl blur-3xl" />
@@ -61,24 +63,32 @@ const AboutSection = () => {
 									<div className="space-y-4">
 										<div className="flex flex-col gap-4">
 											<div className="space-y-2">
-												<h3 className="text-2xl font-semibold">
-													{EDUCATION.university}
-												</h3>
-												<p className="text-lg text-muted-foreground leading-relaxed">
-													{EDUCATION.program}
-												</p>
+												<ScrollAnimation delay={0.25}>
+													<h3 className="text-2xl font-semibold">
+														{EDUCATION.university}
+													</h3>
+												</ScrollAnimation>
+												<ScrollAnimation delay={0.3}>
+													<p className="text-lg text-muted-foreground leading-relaxed">
+														{EDUCATION.program}
+													</p>
+												</ScrollAnimation>
 											</div>
 											<div className="flex flex-col gap-2">
-												<Badge
-													variant="secondary"
-													className="w-fit pl-1 py-1 text-sm font-medium"
-												>
-													<Calendar className="h-4 mr-1" />
-													{EDUCATION.yearRange}
-												</Badge>
-												<span className="text-sm text-muted-foreground flex items-center">
-													<Clock className="h-4" /> {EDUCATION.duration}
-												</span>
+												<ScrollAnimation delay={0.35}>
+													<Badge
+														variant="secondary"
+														className="w-fit pl-1 py-1 text-sm font-medium"
+													>
+														<Calendar className="h-4 mr-1" />
+														{EDUCATION.yearRange}
+													</Badge>
+												</ScrollAnimation>
+												<ScrollAnimation delay={0.4}>
+													<span className="text-sm text-muted-foreground flex items-center">
+														<Clock className="h-4" /> {EDUCATION.duration}
+													</span>
+												</ScrollAnimation>
 											</div>
 										</div>
 									</div>
@@ -96,7 +106,7 @@ const AboutSection = () => {
 								Technologies & Tools
 							</h2>
 						</ScrollAnimation>
-						<ScrollAnimation className="relative">
+						<ScrollAnimation delay={0.1} className="relative">
 							<Card className="relative overflow-hidden border-none rounded-none shadow-none">
 								<CardContent className="p-0">
 									<div className="relative">
