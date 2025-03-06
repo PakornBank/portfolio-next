@@ -33,7 +33,7 @@ const ProjectCard = ({
 								)}
 								<CardTitle className="text-2xl font-bold">{title}</CardTitle>
 							</div>
-							<a
+							{/* <a
 								href={url}
 								target="_blank"
 								rel="noopener noreferrer"
@@ -41,7 +41,7 @@ const ProjectCard = ({
 							>
 								{url.replace("https://", "")}
 								<ArrowUpRight className="h-4 w-4" />
-							</a>
+							</a> */}
 						</div>
 						<div>
 							<CardDescription className="mt-2 text-lg">
