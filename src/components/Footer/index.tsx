@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { SOCIAL_LINKS } from "./constant";
+import Link from "next/link";
 
 const Footer = () => {
 	const currentYear = new Date().getFullYear();
@@ -23,14 +24,14 @@ const Footer = () => {
 									className="hover:text-primary"
 									asChild
 								>
-									<a
+									<Link
 										href={link.url}
 										target="_blank"
 										rel="noopener noreferrer"
 										aria-label={link.platform}
 									>
 										<Icon className="h-5 w-5" />
-									</a>
+									</Link>
 								</Button>
 							);
 						})}
