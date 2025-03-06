@@ -6,7 +6,7 @@ import {
 	CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Globe, ArrowUpRight } from "lucide-react";
+import { Globe } from "lucide-react";
 import { ProjectCardProps } from "./types";
 import Image from "next/image";
 import ScrollAnimation from "../ScrollAnimation";
@@ -14,7 +14,6 @@ import ScrollAnimation from "../ScrollAnimation";
 const ProjectCard = ({
 	title,
 	description,
-	url,
 	technologies,
 	status,
 	iconPath,
