@@ -3,7 +3,6 @@ import CertificationSection from "@/components/CertificationSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
-import ProjectsSection from "@/components/ProjectsSection";
 
 export default function Home() {
 	return (
@@ -12,7 +11,6 @@ export default function Home() {
 			<AboutSection />
 			<ExperienceSection />
 			<CertificationSection />
-			<ProjectsSection />
 			<Footer />
 		</div>
 	);
